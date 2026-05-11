@@ -1,4 +1,4 @@
-# EduTrack Intelligence: Premium Software Engineer Portfolio
+# Premium Software Engineer Portfolio
 
 Welcome to the **Premium SDE Portfolio**, a state-of-the-art, fully dynamic, and animated personal portfolio built for modern software engineers. This portfolio is designed to not only showcase your projects and resume but to act as a comprehensive "career dashboard" featuring coding analytics, academic tracking, and AI-driven insights.
 
