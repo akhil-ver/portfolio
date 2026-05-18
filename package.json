@@ -1,6 +1,7 @@
 {
   "name": "akhil-verma-sde-portfolio",
   "private": true,
+  "packageManager": "npm@10.9.2",
   "engines": {
     "node": "20.x",
     "npm": "10.x"
@@ -13,7 +14,7 @@
     "dev": "node scripts/start-frontend-dev.mjs",
     "dev:frontend": "node scripts/start-frontend-dev.mjs",
     "dev:backend": "npm run dev --workspace backend",
-    "build": "npm run build --workspace frontend && npm run build --workspace backend",
+    "build": "npm run build:frontend",
     "build:frontend": "npm run build --workspace frontend",
     "build:backend": "npm run build --workspace backend",
     "lint": "npm run lint --workspace frontend && npm run lint --workspace backend"
