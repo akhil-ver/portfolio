@@ -125,11 +125,26 @@ export default function Certifications() {
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
+        const defaultFor = (savedCert: any) =>
+          defaultCertificates.find(
+            (defaultCert) =>
+              defaultCert.id === savedCert.id || defaultCert.name === savedCert.name
+          );
+        const refreshedSaved = parsed
+          .filter(
+            (savedCert: any) =>
+              savedCert.name !== "Job Role in Cloud" &&
+              savedCert.link !== "/certificates/job-role-in-cloud.pdf"
+          )
+          .map((savedCert: any) => {
+            const defaultCert = defaultFor(savedCert);
+            return defaultCert ? { ...savedCert, ...defaultCert } : savedCert;
+          });
         const merged = [
-          ...parsed,
+          ...refreshedSaved,
           ...defaultCertificates.filter(
             (defaultCert) =>
-              !parsed.some(
+              !refreshedSaved.some(
                 (savedCert: any) =>
                   savedCert.id === defaultCert.id || savedCert.name === defaultCert.name
               )
