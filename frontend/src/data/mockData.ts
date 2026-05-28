@@ -323,7 +323,7 @@ export const studentData = {
       status: "Completed",
       github: "https://github.com/akhilverma07/Projects/tree/main/live-sheet",
       demo: "#",
-      image: "https://picsum.photos/seed/sheet/800/500",
+      image: "/projects/live-sheet.png",
       updated: "Recently",
       featured: false
     },
@@ -339,7 +339,7 @@ export const studentData = {
       status: "Completed",
       github: "https://github.com/akhilverma07/Projects/tree/main/sp-%26-their-sons---legacy-footwear",
       demo: "#",
-      image: "https://picsum.photos/seed/shoes/800/500",
+      image: "/projects/sp-legacy-footwear.png",
       updated: "Recently",
       featured: false
     }
