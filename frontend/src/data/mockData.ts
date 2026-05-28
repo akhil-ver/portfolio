@@ -211,7 +211,7 @@ export const studentData = {
       status: "Completed",
       github: "https://github.com/akhilverma07/Projects/tree/main/Online%20Floral%20Shopping%20System",
       demo: "#",
-      image: "https://picsum.photos/seed/floral/800/500",
+      image: "/projects/floral-shopping.png",
       updated: "Recently",
       featured: false
     },
