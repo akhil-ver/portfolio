@@ -179,7 +179,7 @@ export const studentData = {
       status: "Completed",
       github: "https://github.com/akhilverma07/Projects/tree/main/PhishGuard%20AI%20%E2%80%94%20AI-Powered%20Phishing%20Detection%20%26%20Threat%20Analysis%20Platform",
       demo: "#",
-      image: "https://picsum.photos/seed/phishguard/800/500",
+      image: "/projects/phishguard-ai.jpg",
       updated: "Recently",
       featured: true
     },
@@ -195,7 +195,7 @@ export const studentData = {
       status: "Completed",
       github: "https://github.com/akhilverma07/Projects/tree/main/PolyLingo%20AI%20%E2%80%94%20AI-Powered%20Language%20Translator",
       demo: "#",
-      image: "https://picsum.photos/seed/translate/800/500",
+      image: "/projects/polylingo-ai.jpg",
       updated: "Recently",
       featured: false
     },
