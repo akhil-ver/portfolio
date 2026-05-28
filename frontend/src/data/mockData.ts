@@ -131,7 +131,7 @@ export const studentData = {
       status: "Completed",
       github: "https://github.com/akhilverma07/Projects/tree/main/CareerPilot%20AI%20%E2%80%94%20Smart%20Job%20Matching%20Platform",
       demo: "#",
-      image: "https://picsum.photos/seed/careerpilot/800/500",
+      image: "/projects/careerpilot-ai.jpg",
       updated: "Recently",
       featured: true
     },
