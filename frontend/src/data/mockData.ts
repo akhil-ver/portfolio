@@ -307,7 +307,7 @@ export const studentData = {
       status: "Completed",
       github: "https://github.com/akhilverma07/Projects/tree/main/Online%20Food%20Website",
       demo: "https://bitedashonlinefoodwebsite.vercel.app",
-      image: "https://picsum.photos/seed/food/800/500",
+      image: "/projects/online-food-website.jpg",
       updated: "Recently",
       featured: false
     },
