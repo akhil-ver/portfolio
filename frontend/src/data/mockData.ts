@@ -147,7 +147,7 @@ export const studentData = {
       status: "Completed",
       github: "https://github.com/akhilverma07/Projects/tree/main/HealthSense%20AI%20%E2%80%94%20AI-Powered%20Disease%20Prediction%20System",
       demo: "#",
-      image: "https://picsum.photos/seed/health/800/500",
+      image: "/projects/healthsense-ai.png",
       updated: "Recently",
       featured: true
     },
@@ -550,10 +550,10 @@ export const studentData = {
       id: 21,
       name: "Google Ads for Beginners", 
       platform: "Coursera", 
-      date: "2024", 
-      link: "https://www.coursera.org/account-profile",
-      skills: ["Coursera", "Certification"],
-      image: "",
+      date: "Mar 9, 2024", 
+      link: "/certificates/coursera-google-ads-for-beginners.pdf",
+      skills: ["Google Ads", "Digital Marketing", "Paid Media", "Coursera"],
+      image: "/certificates/thumbnails/coursera-google-ads-for-beginners.png",
       verified: true
     },
     { 
