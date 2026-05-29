@@ -320,7 +320,17 @@ export default function Projects() {
   React.useEffect(() => {
     const saved = localStorage.getItem(PROJECTS_STORAGE_KEYS.projects);
     if (saved) {
-      try { setProjects(JSON.parse(saved)); } catch(e) {}
+      try { 
+        const parsedSaved = JSON.parse(saved);
+        const newProjects = studentData.projects.filter(p => !parsedSaved.some((sp: any) => sp.id === p.id));
+        if (newProjects.length > 0) {
+          const merged = [...newProjects, ...parsedSaved];
+          setProjects(merged);
+          localStorage.setItem(PROJECTS_STORAGE_KEYS.projects, JSON.stringify(merged));
+        } else {
+          setProjects(parsedSaved); 
+        }
+      } catch(e) {}
     }
     const savedInsights = localStorage.getItem(PROJECTS_STORAGE_KEYS.insights);
     if (savedInsights) {

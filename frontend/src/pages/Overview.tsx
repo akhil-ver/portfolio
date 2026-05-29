@@ -201,7 +201,11 @@ export default function Overview() {
     // Try syncing from other pages' local storage keys so the dashboard reflects the real totals
     const savedProjects = window.localStorage.getItem("portfolio-projects");
     if (savedProjects) {
-      try { setTotalProjects(JSON.parse(savedProjects).length); } catch {}
+      try { 
+        const parsedSaved = JSON.parse(savedProjects);
+        const newProjects = studentData.projects.filter(p => !parsedSaved.some((sp: any) => sp.id === p.id));
+        setTotalProjects(parsedSaved.length + newProjects.length); 
+      } catch {}
     }
     const savedCerts = window.localStorage.getItem("portfolio-certs");
     if (savedCerts) {
