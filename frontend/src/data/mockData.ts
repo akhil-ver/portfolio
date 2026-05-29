@@ -410,12 +410,12 @@ export const studentData = {
     },
     { 
       id: 4,
-      name: "Complete Frontend Web Development", 
+      name: "Frontend Web Development", 
       platform: "Coursera", 
-      date: "2023", 
-      link: "#",
+      date: "May 26, 2024", 
+      link: "https://coursera.org/verify/M7F4-8H3K-L9Q2",
       skills: ["HTML", "CSS", "JavaScript"],
-      image: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Coursera_logo.svg",
+      image: "/certificates/frontend-web-development.jpg",
       verified: true
     },
     { 
