@@ -120,6 +120,38 @@ export const studentData = {
   },
   projects: [
     {
+      id: 15,
+      title: "Student Management System",
+      description: "A placement-level, high-fidelity student management system built with Spring Boot security, JWT auth, dynamic React charts, and a clean layered architecture.",
+      tech: ["React", "Spring Boot", "JWT", "Java"],
+      category: "Full Stack",
+      complexity: "Advanced",
+      depth: 85,
+      time: "1.5 Months",
+      status: "Completed",
+      github: "https://github.com/akhil-ver/Student-Management-System",
+      demo: "#",
+      image: "/projects/smart-sms.jpg",
+      updated: "Recently",
+      featured: true
+    },
+    {
+      id: 16,
+      title: "Full Stack Finance Management System",
+      description: "A comprehensive finance dashboard application to track income, expenses, investments, and goals with real-time dynamic visualizations.",
+      tech: ["React", "Node.js", "Express", "MongoDB"],
+      category: "Full Stack",
+      complexity: "Advanced",
+      depth: 85,
+      time: "1.5 Months",
+      status: "Completed",
+      github: "https://github.com/akhil-ver/Full-Stack-Finance-Management-System",
+      demo: "#",
+      image: "/projects/finance-app.jpg",
+      updated: "Recently",
+      featured: true
+    },
+    {
       id: 1,
       title: "CareerPilot AI — Smart Job Matching",
       description: "An AI-powered platform that intelligently matches candidates with job opportunities based on skills and experience.",
