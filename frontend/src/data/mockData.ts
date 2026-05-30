@@ -25,6 +25,7 @@ export const studentData = {
     semesters: [
       {
         sem: 1,
+        time: "2023-2023(Summer Semester)",
         gpa: 8.85,
         subjects: [
           { code: "BCHY101L", name: "Engineering Chemistry", result: 66, grade: "B" },
@@ -41,6 +42,7 @@ export const studentData = {
       },
       {
         sem: 2,
+        time: "2023-2024 (Winter Semester)",
         gpa: 7.88,
         subjects: [
           { code: "BCSE102L", name: "Structured and Object-Oriented Programming", result: 83, grade: "A" },
@@ -56,6 +58,7 @@ export const studentData = {
       },
       {
         sem: 3,
+        time: "2024 -2024(Summer Semester)",
         gpa: 7.49,
         subjects: [
           { code: "BCHY102N", name: "Environmental Sciences", result: 62, grade: "P" },
@@ -73,6 +76,7 @@ export const studentData = {
       },
       {
         sem: 4,
+        time: "2024-2025 (Winter Semester)",
         gpa: 8.45,
         subjects: [
           { code: "BCSE203E", name: "Web Programming", result: 63, grade: "C" },
@@ -91,6 +95,7 @@ export const studentData = {
       },
       {
         sem: 5,
+        time: "2025 -2025(Summer Semester)",
         gpa: 8.38,
         subjects: [
           { code: "BCSE302L", name: "Database Systems", result: 74, grade: "A" },
@@ -107,7 +112,24 @@ export const studentData = {
           { code: "BSTS301P", name: "Advanced Competitive Coding - I", result: 97, grade: "S" }
         ]
       },
-      { sem: 6, gpa: 9.5, subjects: [{ name: "Artificial Intelligence", grade: "O" }, { name: "Cloud Computing", grade: "O" }, { name: "Network Security", grade: "A+" }] },
+      {
+        sem: 6,
+        time: "2025-2026 (Winter Semester)",
+        gpa: 8.13,
+        subjects: [
+          { code: "BCSE301L", name: "Software Engineering", result: 65, grade: "D" },
+          { code: "BCSE301P", name: "Software Engineering Lab", result: 86, grade: "A" },
+          { code: "BCSE305L", name: "Embedded Systems", result: 65, grade: "B" },
+          { code: "BCSE309L", name: "Cryptography and Network Security", result: 74, grade: "B" },
+          { code: "BCSE309P", name: "Cryptography and Network Security Lab", result: 82, grade: "A" },
+          { code: "BCSE317L", name: "Information Security", result: 68, grade: "B" },
+          { code: "BCSE318L", name: "Data Privacy", result: 80, grade: "A" },
+          { code: "BCSE319L", name: "Penetration Testing and Vulnerability Analysis", result: 78, grade: "B" },
+          { code: "BCSE319P", name: "Penetration Testing and Vulnerability Analysis Lab", result: 89, grade: "A" },
+          { code: "BESP101L", name: "Spanish I", result: 80, grade: "B" },
+          { code: "BSTS302P", name: "Advanced Competitive Coding - II", result: 90, grade: "S" }
+        ]
+      },
     ],
     cgpaTrend: [
       { name: "Sem 1", gpa: 8.85 },
@@ -115,7 +137,7 @@ export const studentData = {
       { name: "Sem 3", gpa: 7.49 },
       { name: "Sem 4", gpa: 8.45 },
       { name: "Sem 5", gpa: 8.38 },
-      { name: "Sem 6", gpa: 9.5 },
+      { name: "Sem 6", gpa: 8.13 },
     ]
   },
   projects: [
