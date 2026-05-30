@@ -120,6 +120,22 @@ export const studentData = {
   },
   projects: [
     {
+      id: 17,
+      title: "EduAnalytics AI",
+      description: "A student performance intelligence system offering AI-powered academic forecasts, attendance tracking, and actionable recommendations.",
+      tech: ["React", "Python", "Machine Learning", "Data Analytics"],
+      category: "AI/ML",
+      complexity: "Advanced",
+      depth: 90,
+      time: "2 Months",
+      status: "Completed",
+      github: "https://github.com/akhil-ver/student-performance-intelligence-system",
+      demo: "#",
+      image: "/projects/edu-analytics.png",
+      updated: "Recently",
+      featured: true
+    },
+    {
       id: 15,
       title: "Student Management System",
       description: "A placement-level, high-fidelity student management system built with Spring Boot security, JWT auth, dynamic React charts, and a clean layered architecture.",
