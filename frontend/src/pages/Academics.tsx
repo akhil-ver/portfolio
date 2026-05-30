@@ -1353,7 +1353,7 @@ export default function Academics() {
                           </div>
                           <div className="text-left space-y-1">
                             <p className="text-lg font-black text-premium tracking-tight">Semester {sem.sem}</p>
-                            <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Academic Year 202{Math.floor((sem.sem-1)/2) + 1}</p>
+                            <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest">{sem.time || `Academic Year 202${Math.floor((sem.sem-1)/2) + 1}`}</p>
                           </div>
                         </div>
                         <div className="flex items-center gap-8">
