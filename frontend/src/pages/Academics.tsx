@@ -197,7 +197,19 @@ export default function Academics() {
     const savedAiInsights = window.localStorage.getItem(ACADEMICS_STORAGE_KEYS.aiInsights);
     const savedSectionTitles = window.localStorage.getItem(ACADEMICS_STORAGE_KEYS.sectionTitles);
 
-    if (savedSemesters) setSemesters(JSON.parse(savedSemesters));
+    if (savedSemesters) {
+      try {
+        const parsed = JSON.parse(savedSemesters);
+        const merged = parsed.map((savedSem: any) => {
+          const defaultSem = studentData.academics.semesters.find(s => s.sem === savedSem.sem);
+          return {
+            ...savedSem,
+            time: savedSem.time || defaultSem?.time
+          };
+        });
+        setSemesters(merged);
+      } catch(e) {}
+    }
     if (savedCgpaTrend) setCgpaTrend(JSON.parse(savedCgpaTrend));
     if (savedStats) try { setAcademicStats(JSON.parse(savedStats)); } catch(e) {}
     if (savedOverallCgpa) try { setOverallCgpaState(JSON.parse(savedOverallCgpa)); } catch(e) {}
