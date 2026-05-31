@@ -25,7 +25,7 @@ export const studentData = {
     semesters: [
       {
         sem: 1,
-        time: "2023-2023(Summer Semester)",
+        time: "2023-2023 (Summer Semester)",
         gpa: 8.85,
         subjects: [
           { code: "BCHY101L", name: "Engineering Chemistry", result: 66, grade: "B" },
@@ -58,7 +58,7 @@ export const studentData = {
       },
       {
         sem: 3,
-        time: "2024 -2024(Summer Semester)",
+        time: "2024-2024",
         gpa: 7.49,
         subjects: [
           { code: "BCHY102N", name: "Environmental Sciences", result: 62, grade: "P" },
@@ -76,7 +76,7 @@ export const studentData = {
       },
       {
         sem: 4,
-        time: "2024-2025 (Winter Semester)",
+        time: "2024-2025",
         gpa: 8.45,
         subjects: [
           { code: "BCSE203E", name: "Web Programming", result: 63, grade: "C" },
@@ -95,7 +95,7 @@ export const studentData = {
       },
       {
         sem: 5,
-        time: "2025 -2025(Summer Semester)",
+        time: "2025-2025",
         gpa: 8.38,
         subjects: [
           { code: "BCSE302L", name: "Database Systems", result: 74, grade: "A" },
@@ -114,7 +114,7 @@ export const studentData = {
       },
       {
         sem: 6,
-        time: "2025-2026 (Winter Semester)",
+        time: "2025-2026",
         gpa: 8.13,
         subjects: [
           { code: "BCSE301L", name: "Software Engineering", result: 65, grade: "D" },
