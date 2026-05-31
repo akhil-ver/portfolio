@@ -142,6 +142,22 @@ export const studentData = {
   },
   projects: [
     {
+      id: 18,
+      title: "SkillSync AI - Resume Analyzer",
+      description: "An intelligent platform to analyze resumes, monitor optimization trends, and provide actionable skill mapping using AI.",
+      tech: ["React", "Python", "Machine Learning", "NLP"],
+      category: "AI/ML",
+      complexity: "Advanced",
+      depth: 90,
+      time: "2 Months",
+      status: "Completed",
+      github: "https://github.com/akhil-ver/SkillSyncAI-Resume-Analyzer",
+      demo: "#",
+      image: "/projects/skillsync-ai.png",
+      updated: "Recently",
+      featured: true
+    },
+    {
       id: 17,
       title: "EduAnalytics AI",
       description: "A student performance intelligence system offering AI-powered academic forecasts, attendance tracking, and actionable recommendations.",
