@@ -151,7 +151,7 @@ export const studentData = {
       depth: 90,
       time: "1 Month",
       status: "Completed",
-      github: "https://github.com/akhil-ver",
+      github: "https://github.com/akhilverma07/Projects/tree/main/LUVIA%20%E2%80%94%20AI-Driven%20E-Commerce%20Platform",
       demo: "#",
       image: "/projects/luvia.png",
       updated: "Recently",
@@ -253,22 +253,7 @@ export const studentData = {
       updated: "Recently",
       featured: true
     },
-    {
-      id: 3,
-      title: "LUVIA — AI-Driven E-Commerce",
-      description: "A next-generation e-commerce platform incorporating AI for personalized product recommendations and user analytics.",
-      tech: ["React", "Node.js", "MongoDB", "AI"],
-      category: "Full Stack",
-      complexity: "Advanced",
-      depth: 88,
-      time: "2.5 Months",
-      status: "Completed",
-      github: "https://github.com/akhilverma07/Projects/tree/main/LUVIA%20%E2%80%94%20AI-Driven%20E-Commerce%20Platform",
-      demo: "#",
-      image: "https://picsum.photos/seed/luvia/800/500",
-      updated: "Recently",
-      featured: false
-    },
+
     {
       id: 4,
       title: "PhishGuard AI — Threat Analysis",
