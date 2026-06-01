@@ -142,6 +142,22 @@ export const studentData = {
   },
   projects: [
     {
+      id: 19,
+      title: "LUVIA \u2014 AI-Driven E-Commerce Platform",
+      description: "An architectural fashion e-commerce platform with AI-driven recommendations and immersive 3D experiences.",
+      tech: ["React", "Node.js", "AI", "Three.js"],
+      category: "Full Stack",
+      complexity: "Advanced",
+      depth: 90,
+      time: "1 Month",
+      status: "Completed",
+      github: "https://github.com/akhil-ver",
+      demo: "#",
+      image: "/projects/luvia.png",
+      updated: "Recently",
+      featured: true
+    },
+    {
       id: 18,
       title: "SkillSync AI - Resume Analyzer",
       description: "An intelligent platform to analyze resumes, monitor optimization trends, and provide actionable skill mapping using AI.",
