@@ -207,10 +207,23 @@ export default function Academics() {
             time: savedSem.time || defaultSem?.time
           };
         });
-        setSemesters(merged);
+        
+        const newSemesters = studentData.academics.semesters.filter(
+          defaultSem => !parsed.some((savedSem: any) => savedSem.sem === defaultSem.sem)
+        );
+        
+        setSemesters([...merged, ...newSemesters]);
       } catch(e) {}
     }
-    if (savedCgpaTrend) setCgpaTrend(JSON.parse(savedCgpaTrend));
+    if (savedCgpaTrend) {
+      try {
+        const parsed = JSON.parse(savedCgpaTrend);
+        const newTrends = studentData.academics.cgpaTrend.filter(
+          defaultTrend => !parsed.some((savedTrend: any) => savedTrend.name === defaultTrend.name)
+        );
+        setCgpaTrend([...parsed, ...newTrends]);
+      } catch(e) {}
+    }
     if (savedStats) try { setAcademicStats(JSON.parse(savedStats)); } catch(e) {}
     if (savedOverallCgpa) try { setOverallCgpaState(JSON.parse(savedOverallCgpa)); } catch(e) {}
     if (savedSubjectAnalysis) try { setSubjectAnalysisState(JSON.parse(savedSubjectAnalysis)); } catch(e) {}
