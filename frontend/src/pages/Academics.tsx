@@ -71,8 +71,8 @@ import { cn } from "@/lib/utils";
 
 const COLORS = ["#6366F1", "#8B5CF6", "#06B6D4", "#22C55E", "#F59E0B"];
 const ACADEMICS_STORAGE_KEYS = {
-  semesters: "academics-semesters",
-  cgpaTrend: "academics-cgpa-trend",
+  semesters: "academics-semesters-v2",
+  cgpaTrend: "academics-cgpa-trend-v2",
   stats: "academics-stats",
   overallCgpa: "academics-overall-cgpa",
   subjectAnalysis: "academics-subject-analysis",
