@@ -304,9 +304,9 @@ export const studentData = {
     },
     {
       id: 7,
-      title: "Secure Steganography System",
-      description: "A security application that hides sensitive information within image files using advanced steganographic algorithms.",
-      tech: ["Python", "Cryptography", "Image Processing"],
+      title: "SteganoSafe \u2014 Secure File Sharing System",
+      description: "A secure file sharing application that encrypts and hides sensitive information within image files using advanced steganographic algorithms.",
+      tech: ["React", "Python", "Cryptography", "Image Processing"],
       category: "System",
       complexity: "Advanced",
       depth: 85,
@@ -314,7 +314,7 @@ export const studentData = {
       status: "Completed",
       github: "https://github.com/akhilverma07/Projects/tree/main/Secure%20Steganography%20System",
       demo: "#",
-      image: "https://picsum.photos/seed/stego/800/500",
+      image: "/projects/steganosafe.png",
       updated: "Recently",
       featured: false
     },
