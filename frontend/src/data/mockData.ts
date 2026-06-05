@@ -432,7 +432,26 @@ export const studentData = {
     }
   ],
   certifications: [
-
+    {
+      id: 38,
+      name: "Mastercard Cybersecurity Job Simulation",
+      platform: "Forage",
+      date: "June 2026",
+      link: "https://www.theforage.com",
+      skills: ["Cybersecurity", "Phishing Simulation", "Threat Analysis"],
+      image: "/certifications/mastercard-cybersecurity.png",
+      verified: true
+    },
+    {
+      id: 39,
+      name: "Deloitte Technology Job Simulation",
+      platform: "Forage",
+      date: "June 2026",
+      link: "https://www.theforage.com",
+      skills: ["Technology", "Coding", "Software Development"],
+      image: "/certifications/deloitte-technology.png",
+      verified: true
+    },
     { 
       id: 1,
       name: "OCI Generative AI", 
