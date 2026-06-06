@@ -454,22 +454,22 @@ export const studentData = {
     },
     { 
       id: 1,
-      name: "OCI Generative AI", 
+      name: "Oracle Cloud Infrastructure 2025 Generative AI Professional", 
       platform: "Oracle", 
-      date: "2024", 
+      date: "September 12, 2025", 
       link: "#",
-      skills: ["Generative AI", "LLMs", "Oracle Cloud"],
-      image: "https://picsum.photos/seed/oracle/400/300",
+      skills: ["Generative AI", "LLMs", "Oracle Cloud", "RAG", "LangChain"],
+      image: "/certificates/oci-gen-ai-2025.png",
       verified: true
     },
     { 
       id: 2,
-      name: "OCI Data Science", 
+      name: "Oracle Cloud Infrastructure 2025 Data Science Professional", 
       platform: "Oracle", 
-      date: "2024", 
+      date: "September 26, 2025", 
       link: "#",
-      skills: ["Data Science", "Machine Learning"],
-      image: "https://picsum.photos/seed/datascience/400/300",
+      skills: ["Data Science", "Machine Learning", "OCI Services"],
+      image: "/certificates/oci-data-science-2025.png",
       verified: true
     },
     { 
