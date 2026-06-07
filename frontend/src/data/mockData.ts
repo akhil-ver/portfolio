@@ -459,7 +459,7 @@ export const studentData = {
       date: "September 12, 2025", 
       link: "#",
       skills: ["Generative AI", "LLMs", "Oracle Cloud", "RAG", "LangChain"],
-      image: "/certificates/oci-gen-ai-2025.png",
+      image: "/certificates/oci-gen-ai-2025.jpeg",
       verified: true
     },
     { 
@@ -469,7 +469,7 @@ export const studentData = {
       date: "September 26, 2025", 
       link: "#",
       skills: ["Data Science", "Machine Learning", "OCI Services"],
-      image: "/certificates/oci-data-science-2025.png",
+      image: "/certificates/oci-data-science-2025.jpeg",
       verified: true
     },
     { 
