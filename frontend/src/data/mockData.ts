@@ -15,7 +15,7 @@ export const studentData = {
     resume: "/resume.pdf",
   },
   stats: {
-    cgpa: 8.21,
+    cgpa: 8.20,
     totalProjects: 6,
     certifications: 37,
     dsaSolved: 200,

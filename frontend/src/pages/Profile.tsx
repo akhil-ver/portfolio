@@ -400,7 +400,7 @@ export default function Profile() {
                     <GraduationCap className="mr-2 h-3.5 w-3.5 text-indigo-400" /> VIT, B.Tech CSE (2027)
                   </Badge>
                   <Badge variant="secondary" className="bg-emerald-500/10 text-emerald-400 border-emerald-500/20 px-3 py-1 rounded-xl">
-                    <Star className="mr-2 h-3.5 w-3.5" /> CGPA: 8.21
+                    <Star className="mr-2 h-3.5 w-3.5" /> CGPA: 8.20
                   </Badge>
                 </div>
               </div>
