@@ -1340,7 +1340,12 @@ export default function Academics() {
                       onClick={() =>
                         setSemesters((current) => [
                           ...current,
-                          { sem: current.length + 1, gpa: 0, subjects: [] },
+                          {
+                            sem: current.length + 1,
+                            time: "2026-2026",
+                            gpa: 0,
+                            subjects: [],
+                          },
                         ])
                       }
                     >

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { clearAdminCredentials, storeAdminCredentials } from "./remoteStorage";
 
 const ADMIN_STORAGE_KEY = "portfolio-admin-session";
 const DEFAULT_ADMIN_USERNAME =
@@ -27,6 +28,7 @@ export function AdminProvider({ children }: { children: React.ReactNode }) {
       username === DEFAULT_ADMIN_USERNAME && password === DEFAULT_ADMIN_PASSWORD;
 
     if (isValid) {
+      storeAdminCredentials(username, password);
       window.localStorage.setItem(ADMIN_STORAGE_KEY, "true");
       setIsAdmin(true);
     }
@@ -35,6 +37,7 @@ export function AdminProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const logout = React.useCallback(() => {
+    clearAdminCredentials();
     window.localStorage.removeItem(ADMIN_STORAGE_KEY);
     setIsAdmin(false);
   }, []);

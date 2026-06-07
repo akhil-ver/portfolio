@@ -7,7 +7,7 @@ Welcome to the **Premium SDE Portfolio**, a state-of-the-art, fully dynamic, and
 ## 🌟 Key Features
 
 - **Admin Control Panel**: Almost every section, title, metric, and insight on the website is editable directly from the UI. An integrated Admin mode allows you to tweak data on the fly.
-- **Local Storage Persistence**: All your dynamic edits (new projects, new certifications, changed AI insights) are instantly saved to your browser's local storage, ensuring your data persists without needing a backend.
+- **Internet-wide Admin Persistence**: Admin edits are saved through a Vercel API route into Vercel KV/Upstash Redis, then loaded by every visitor before the app renders.
 - **Premium Aesthetics**: Built with Tailwind CSS, utilizing glassmorphism, subtle gradients, rich dark-mode contrast, and interactive 3D tilt hover effects via Framer Motion.
 - **Data Visualization**: Extensive use of `recharts` to render beautiful, interactive Area, Bar, Pie, and Radar charts to visualize your coding velocity, topic mastery, and academic performance.
 - **Responsive Design**: Flawless experience across desktop, tablet, and mobile devices.
@@ -103,24 +103,36 @@ The application is broken down into modular pages, each serving as a specialized
 
 ## ⚙️ How the Admin & Data System Works
 
-This portfolio utilizes a unique, backend-less approach to data management, relying entirely on the browser's `localStorage` combined with an `<AdminOnly>` wrapper component.
+This portfolio uses an `<AdminOnly>` wrapper for edit controls and a shared remote storage layer for deployed changes.
 
 1. **The `<AdminOnly>` Component**: 
    Throughout the codebase, edit buttons and forms are wrapped in `<AdminOnly>`. This component checks if the user is in "Admin Mode" before rendering the UI controls.
    
-2. **Local Storage Synchronization**:
-   Every page utilizes React's `useState` to hold data (e.g., lists of projects, strings of text, chart data). When the component mounts (`useEffect`), it checks `localStorage` for any previously saved data and hydrates the state. When an Admin makes a change via a Dialog modal, the state is updated and instantly serialized back into `localStorage`.
+2. **Remote Storage Synchronization**:
+   The app loads `/api/content` before React renders and copies saved remote values into `localStorage`, so the existing page editors keep working. When an Admin makes a change, `localStorage.setItem` is mirrored to `/api/content`, which saves the value in Vercel KV/Upstash Redis.
    
    *Example:*
    ```javascript
    const saveTechStack = (newTechStack) => {
      setTechStack(newTechStack); // Update UI
-     localStorage.setItem("portfolio-project-tech", JSON.stringify(newTechStack)); // Persist data
+     localStorage.setItem("portfolio-project-tech", JSON.stringify(newTechStack)); // Persist locally and remotely
    };
    ```
 
-3. **Resetting Data**:
-   Since data is tied to the browser, clearing your browser's local storage or opening the app in an Incognito window will revert the portfolio back to the default `studentData` defined in `src/data/mockData.ts`.
+3. **Required Vercel Environment Variables**:
+   Add a Vercel KV database to the project, or connect an Upstash Redis database, then set these environment variables in Vercel:
+   ```text
+   KV_REST_API_URL
+   KV_REST_API_TOKEN
+   ADMIN_USERNAME
+   ADMIN_PASSWORD
+   VITE_ADMIN_USERNAME
+   VITE_ADMIN_PASSWORD
+   ```
+   `KV_REST_API_URL` and `KV_REST_API_TOKEN` are created automatically by Vercel KV. If you use Upstash directly, use `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` instead.
+
+4. **Local Development Fallback**:
+   If the KV variables are not configured locally, the app still works with browser-only local storage. Internet-wide sync starts after deployment with the KV variables configured.
 
 ---
 
