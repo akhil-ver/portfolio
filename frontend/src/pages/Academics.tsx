@@ -850,7 +850,7 @@ export default function Academics() {
                         <DialogFooter className="mt-6">
                           <span className="mr-auto text-xs font-bold text-emerald-400 self-center">{saveMessage}</span>
                           <DialogClose render={<Button variant="outline" type="button" className="border-white/10" />}>Cancel</DialogClose>
-                          <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                          <DialogClose render={<Button type="submit" className="glow-primary" onClick={() => saveSubjectAnalysis(subjectAnalysisState)} />}>Save changes</DialogClose>
                         </DialogFooter>
                       </form>
                     </DialogContent>
@@ -996,7 +996,7 @@ export default function Academics() {
                         <DialogFooter className="mt-6">
                           <span className="mr-auto text-xs font-bold text-emerald-400 self-center">{saveMessage}</span>
                           <DialogClose render={<Button variant="outline" type="button" className="border-white/10" />}>Cancel</DialogClose>
-                          <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                          <DialogClose render={<Button type="submit" className="glow-primary" onClick={() => savePredictiveAnalytics(predictiveAnalyticsState)} />}>Save changes</DialogClose>
                         </DialogFooter>
                       </form>
                     </DialogContent>
@@ -1541,7 +1541,7 @@ export default function Academics() {
                         <DialogFooter className="mt-6">
                           <span className="mr-auto text-xs font-bold text-emerald-400 self-center">{saveMessage}</span>
                           <DialogClose render={<Button variant="outline" type="button" className="border-white/10" />}>Cancel</DialogClose>
-                          <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                          <DialogClose render={<Button type="submit" className="glow-primary" onClick={() => saveAiInsights(aiInsightsState)} />}>Save changes</DialogClose>
                         </DialogFooter>
                       </form>
                     </DialogContent>
