@@ -478,9 +478,9 @@ export default function Profile() {
                     <DialogHeader>
                       <DialogTitle className="text-premium">Edit Profile Info</DialogTitle>
                     </DialogHeader>
-                    <form onSubmit={(e) => {
+                    <form id="edit-profile-info-form" onSubmit={(e) => {
                       e.preventDefault();
-                      const formData = new FormData(e.target);
+                      const formData = new FormData(e.target as HTMLFormElement);
                       saveProfile({
                         ...profile,
                         name: formData.get('name') as string,
@@ -509,7 +509,19 @@ export default function Profile() {
                       </div>
                       <DialogFooter>
                         <DialogClose render={<Button variant="outline" type="button" className="border-white/10" />}>Cancel</DialogClose>
-                        <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                        <DialogClose render={<Button type="submit" form="edit-profile-info-form" className="glow-primary" onClick={() => {
+                          const form = document.getElementById("edit-profile-info-form") as HTMLFormElement;
+                          if (form) {
+                            const formData = new FormData(form);
+                            saveProfile({
+                              ...profile,
+                              name: formData.get('name') as string,
+                              role: formData.get('role') as string,
+                              college: formData.get('college') as string,
+                              branch: formData.get('branch') as string
+                            });
+                          }
+                        }} />}>Save changes</DialogClose>
                       </DialogFooter>
                     </form>
                   </DialogContent>
@@ -539,9 +551,9 @@ export default function Profile() {
                         <DialogTitle className="text-premium">Edit About Me</DialogTitle>
                       </DialogHeader>
                       
-                      <form onSubmit={(e) => {
+                      <form id="edit-about-form" onSubmit={(e) => {
                         e.preventDefault();
-                        const formData = new FormData(e.target);
+                        const formData = new FormData(e.target as HTMLFormElement);
                         saveProfile({
                           ...profile,
                           about: formData.get('about') as string
@@ -556,7 +568,16 @@ export default function Profile() {
                         </div>
                         <DialogFooter>
                           <DialogClose render={<Button variant="outline" type="button" className="border-white/10" />}>Cancel</DialogClose>
-                          <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                          <DialogClose render={<Button type="submit" form="edit-about-form" className="glow-primary" onClick={() => {
+                            const form = document.getElementById("edit-about-form") as HTMLFormElement;
+                            if (form) {
+                              const formData = new FormData(form);
+                              saveProfile({
+                                ...profile,
+                                about: formData.get('about') as string
+                              });
+                            }
+                          }} />}>Save changes</DialogClose>
                         </DialogFooter>
                       </form>
                     </DialogContent>
@@ -601,9 +622,9 @@ export default function Profile() {
                       <DialogHeader>
                         <DialogTitle className="text-premium">Add Experience</DialogTitle>
                       </DialogHeader>
-                      <form onSubmit={(e) => {
+                      <form id="add-exp-form" onSubmit={(e) => {
                         e.preventDefault();
-                        const formData = new FormData(e.target);
+                        const formData = new FormData(e.target as HTMLFormElement);
                         const newExp = {
                           role: formData.get('role') as string,
                           company: formData.get('company') as string,
@@ -622,7 +643,20 @@ export default function Profile() {
                           <Input name="skills" placeholder="Skills (comma separated)" className="bg-white/5 border-white/10" />
                         </div>
                         <DialogFooter>
-                          <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                          <DialogClose render={<Button type="submit" form="add-exp-form" className="glow-primary" onClick={() => {
+                            const form = document.getElementById("add-exp-form") as HTMLFormElement;
+                            if (form) {
+                              const formData = new FormData(form);
+                              const newExp = {
+                                role: formData.get('role') as string,
+                                company: formData.get('company') as string,
+                                duration: formData.get('duration') as string,
+                                description: formData.get('description') as string,
+                                skills: (formData.get('skills') as string).split(',').map(s => s.trim()).filter(Boolean)
+                              };
+                              saveInternships([...internships, newExp]);
+                            }
+                          }} />}>Save changes</DialogClose>
                         </DialogFooter>
                       </form>
                     </DialogContent>
@@ -657,9 +691,9 @@ export default function Profile() {
                                   <DialogTitle className="text-premium">Edit Experience</DialogTitle>
                   </DialogHeader>
                   
-                                <form onSubmit={(e) => {
+                                <form id={`edit-exp-form-${i}`} onSubmit={(e) => {
                                   e.preventDefault();
-                                  const formData = new FormData(e.target);
+                                  const formData = new FormData(e.target as HTMLFormElement);
                                   const newExp = {
                                     role: formData.get('role') as string,
                                     company: formData.get('company') as string,
@@ -679,7 +713,22 @@ export default function Profile() {
                                     <Input name="skills" defaultValue={intern.skills.join(', ')} placeholder="Skills (comma separated)" className="bg-white/5 border-white/10" />
                                   </div>
                                   <DialogFooter>
-                                    <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                                    <DialogClose render={<Button type="submit" form={`edit-exp-form-${i}`} className="glow-primary" onClick={() => {
+                                      const form = document.getElementById(`edit-exp-form-${i}`) as HTMLFormElement;
+                                      if (form) {
+                                        const formData = new FormData(form);
+                                        const newExp = {
+                                          role: formData.get('role') as string,
+                                          company: formData.get('company') as string,
+                                          duration: formData.get('duration') as string,
+                                          description: formData.get('description') as string,
+                                          skills: (formData.get('skills') as string).split(',').map(s => s.trim()).filter(Boolean)
+                                        };
+                                        const updatedInternships = [...internships];
+                                        updatedInternships[i] = newExp;
+                                        saveInternships(updatedInternships);
+                                      }
+                                    }} />}>Save changes</DialogClose>
                                   </DialogFooter>
                                 </form>
                               </DialogContent>
@@ -1217,7 +1266,7 @@ export default function Profile() {
                         <DialogFooter>
                           <span className="mr-auto text-xs font-bold text-emerald-400">{saveMessage}</span>
                           <DialogClose render={<Button variant="outline" type="button" className="border-white/10" />}>Cancel</DialogClose>
-                          <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                          <DialogClose render={<Button type="submit" className="glow-primary" onClick={() => saveConnectLinks(connectLinks)} />}>Save changes</DialogClose>
                         </DialogFooter>
                       </form>
                     </DialogContent>

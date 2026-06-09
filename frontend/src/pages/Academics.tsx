@@ -589,7 +589,7 @@ export default function Academics() {
                         <DialogFooter className="mt-6">
                           <span className="mr-auto text-xs font-bold text-emerald-400 self-center">{saveMessage}</span>
                           <DialogClose render={<Button variant="outline" type="button" className="border-white/10" />}>Cancel</DialogClose>
-                          <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                          <DialogClose render={<Button type="submit" className="glow-primary" onClick={() => saveOverallCgpa(overallCgpaState)} />}>Save changes</DialogClose>
                         </DialogFooter>
                       </form>
                     </DialogContent>
@@ -699,7 +699,7 @@ export default function Academics() {
                         <DialogFooter>
                           <span className="mr-auto text-xs font-bold text-emerald-400">{saveMessage}</span>
                           <DialogClose render={<Button variant="outline" type="button" className="border-white/10" />}>Cancel</DialogClose>
-                          <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                          <DialogClose render={<Button type="submit" className="glow-primary" onClick={() => saveAcademicStats(academicStats)} />}>Save changes</DialogClose>
                         </DialogFooter>
                       </form>
                     </DialogContent>
@@ -1110,7 +1110,7 @@ export default function Academics() {
                           <DialogFooter className="mt-6">
                             <span className="mr-auto text-xs font-bold text-emerald-400 self-center">{saveMessage}</span>
                             <DialogClose render={<Button variant="outline" type="button" className="border-white/10" />}>Cancel</DialogClose>
-                            <DialogClose render={<Button type="submit" className="glow-primary" />}>Save changes</DialogClose>
+                            <DialogClose render={<Button type="submit" className="glow-primary" onClick={() => saveAcademicGoals(academicGoalsState)} />}>Save changes</DialogClose>
                           </DialogFooter>
                         </form>
                       </DialogContent>
