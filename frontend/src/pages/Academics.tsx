@@ -177,7 +177,7 @@ export default function Academics() {
   });
 
   const [aiInsightsState, setAiInsightsState] = React.useState({
-    title: "AI Academic Insights",
+    title: "Academic Insights",
     subtitle: "Powered by EduTrack Intelligence",
     insights: [
       { type: "Growth", text: "Your GPA shows a consistent upward trend across all semesters. 📈", icon: "TrendingUp", color: "text-emerald-400" },
@@ -1454,7 +1454,7 @@ export default function Academics() {
                     } />
                     <DialogContent className="sm:max-w-2xl bg-card/90 backdrop-blur-xl border-white/10 text-foreground">
                       <DialogHeader>
-                        <DialogTitle className="text-premium">Edit AI Insights</DialogTitle>
+                        <DialogTitle className="text-premium">Edit Insights</DialogTitle>
                       </DialogHeader>
                       <form onSubmit={(e) => { e.preventDefault(); saveAiInsights(aiInsightsState); }}>
                         <div className="space-y-4 max-h-[65vh] overflow-y-auto pr-1">

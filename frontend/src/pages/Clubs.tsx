@@ -63,7 +63,7 @@ export default function Clubs() {
     statsTitle: "Highlights",
     clubsTitle: "Club Memberships",
     achievementsTitle: "Achievement Timeline",
-    aiInsightsTitle: "AI Impact Insights",
+    aiInsightsTitle: "Impact Insights",
     aiInsightsSub: "Quantifying your leadership value",
     participationTitle: "Participation History",
   });
@@ -186,7 +186,7 @@ export default function Clubs() {
                     <p className="mt-1 text-sm text-muted-foreground">Use the Achievements editor to add a new award or milestone.</p>
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <p className="font-bold text-premium">AI Impact Insights</p>
+                    <p className="font-bold text-premium">Impact Insights</p>
                     <p className="mt-1 text-sm text-muted-foreground">Add competencies or update the recruiter tip in the insights editor.</p>
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -422,7 +422,7 @@ export default function Clubs() {
                 <Dialog>
                   <DialogTrigger render={<Button variant="secondary" size="sm" className="bg-white/10 text-white border-none hover:bg-white/20" />}>Edit</DialogTrigger>
                   <DialogContent className="sm:max-w-2xl bg-card/95 border-white/10 text-foreground">
-                    <DialogHeader><DialogTitle>Edit AI Impact Insights</DialogTitle></DialogHeader>
+                    <DialogHeader><DialogTitle>Edit Impact Insights</DialogTitle></DialogHeader>
                     <div className="space-y-4 mb-4">
                       <Input value={sectionTitles.aiInsightsTitle} onChange={(e) => updateSectionTitle("aiInsightsTitle", e.target.value)} className="bg-black/20 border-white/10" placeholder="Section title" />
                       <Input value={sectionTitles.aiInsightsSub} onChange={(e) => updateSectionTitle("aiInsightsSub", e.target.value)} className="bg-black/20 border-white/10" placeholder="Section subtitle" />

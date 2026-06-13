@@ -165,7 +165,7 @@ export default function Overview() {
     goals: "Goal Tracking",
     achievements: "Achievements",
     roadmap: "Upcoming Goals",
-    aiInsights: "AI Assistant Insights",
+    aiInsights: "Assistant Insights",
     report: "Executive Summary"
   });
 
@@ -178,12 +178,12 @@ export default function Overview() {
   };
   
   const [academicAiInsight, setAcademicAiInsight] = React.useState({
-    title: "AI Insight",
+    title: "Insight",
     content: "Your academic performance is stable with consistent improvement. You are on track for 8.5+ CGPA 📈"
   });
 
   const [dsaAiSuggestion, setDsaAiSuggestion] = React.useState({
-    title: "AI Suggestion",
+    title: "Suggestion",
     content: "Focus on Dynamic Programming this week to boost your rank."
   });
   
@@ -541,7 +541,7 @@ export default function Overview() {
                       />
                     </div>
                     <div className="rounded-2xl border border-white/10 bg-indigo-500/10 p-4 space-y-3 mb-4">
-                      <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest">Edit AI Insight</p>
+                      <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest">Edit Insight</p>
                       <Input
                         value={academicAiInsight.title}
                         onChange={(e) => setAcademicAiInsight(c => ({ ...c, title: e.target.value }))}
@@ -709,7 +709,7 @@ export default function Overview() {
                       />
                     </div>
                     <div className="rounded-2xl border border-white/10 bg-cyan-500/10 p-4 space-y-3 mb-4">
-                      <p className="text-xs font-bold text-cyan-400 uppercase tracking-widest">Edit AI Suggestion</p>
+                      <p className="text-xs font-bold text-cyan-400 uppercase tracking-widest">Edit Suggestion</p>
                       <Input
                         value={dsaAiSuggestion.title}
                         onChange={(e) => setDsaAiSuggestion(c => ({ ...c, title: e.target.value }))}
@@ -1219,7 +1219,7 @@ export default function Overview() {
                         />
                         <DialogContent className="glass-panel border-none sm:max-w-3xl">
                           <DialogHeader>
-                            <DialogTitle className="text-premium">Edit AI Assistant Insights</DialogTitle>
+                            <DialogTitle className="text-premium">Edit Assistant Insights</DialogTitle>
                           </DialogHeader>
                           <div className="space-y-4 max-h-[60vh] overflow-y-auto pr-1">
                             <div className="rounded-2xl border border-white/10 bg-white/5 p-4 space-y-3 mb-4">

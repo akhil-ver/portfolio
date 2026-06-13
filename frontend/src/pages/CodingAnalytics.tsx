@@ -123,7 +123,7 @@ export default function CodingAnalytics() {
     mastery: "Topic Mastery",
     platform: "Platform Comparison",
     strengths: "Strengths & Weaknesses",
-    recommendation: "AI Recommendation"
+    recommendation: "Recommendation"
   });
   
   const updateSectionTitle = (key, value) => {
@@ -673,7 +673,7 @@ export default function CodingAnalytics() {
                 <Dialog>
                   <DialogTrigger render={<Button variant="secondary" size="sm" className="bg-white/10 text-white hover:bg-white/20 border-none" />}>Edit</DialogTrigger>
                   <DialogContent className="sm:max-w-2xl bg-card/95 border-white/10 text-foreground">
-                    <DialogHeader><DialogTitle>Edit AI Recommendation</DialogTitle></DialogHeader>
+                    <DialogHeader><DialogTitle>Edit Recommendation</DialogTitle></DialogHeader>
                     <div className="space-y-4 mb-4">
                        <Input value={sectionTitles.recommendation} onChange={e => updateSectionTitle("recommendation", e.target.value)} placeholder="Section Title" className="bg-black/20 border-white/10" />
                     </div>

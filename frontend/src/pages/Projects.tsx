@@ -288,7 +288,7 @@ export default function Projects() {
     headerSub: "Showcasing my technical work, AI systems, and full-stack applications",
     featured: "Featured Masterpieces",
     tech: "Technologies I Use",
-    insights: "AI Insights",
+    insights: "Insights",
     dna: "Project DNA",
     dnaSub: "EduTrack Intelligence",
     timeline: "Development Timeline"
@@ -730,7 +730,7 @@ export default function Projects() {
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-2xl bg-card/95 backdrop-blur-xl border-white/10">
                   <DialogHeader>
-                    <DialogTitle className="text-premium">Edit AI Insights</DialogTitle>
+                    <DialogTitle className="text-premium">Edit Insights</DialogTitle>
                   </DialogHeader>
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4 space-y-3 mb-4">
                     <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Section Titles</p>

@@ -80,7 +80,7 @@ export default function Certifications() {
     headerSub: "Professional credentials and specialized training from global tech leaders.",
     learningPath: "Learning Path Progress",
     learningPathSub: "Courses currently in progress and upcoming milestones",
-    aiInsights: "AI Learning Insights",
+    aiInsights: "Learning Insights",
     aiInsightsSub: "Personalized certification roadmap"
   });
   const [learningPaths, setLearningPaths] = React.useState([
@@ -599,7 +599,7 @@ export default function Certifications() {
                 <Dialog>
                   <DialogTrigger render={<Button variant="secondary" size="sm" className="bg-white/10 text-white hover:bg-white/20 border-none">Edit</Button>} />
                   <DialogContent className="sm:max-w-lg bg-card/95 border-white/10 text-foreground">
-                    <DialogHeader><DialogTitle>Edit AI Insights</DialogTitle></DialogHeader>
+                    <DialogHeader><DialogTitle>Edit Insights</DialogTitle></DialogHeader>
                     <div className="space-y-4 mb-4">
                        <Input value={sectionTitles.aiInsights} onChange={e => updateSectionTitle("aiInsights", e.target.value)} placeholder="Title" className="bg-black/20 border-white/10" />
                        <Input value={sectionTitles.aiInsightsSub} onChange={e => updateSectionTitle("aiInsightsSub", e.target.value)} placeholder="Subtitle" className="bg-black/20 border-white/10" />
