@@ -332,7 +332,7 @@ export default function Overview() {
     { title: "CGPA", value: calculatedCgpa, icon: GraduationCap, color: "text-indigo-400", bg: "bg-indigo-500/10", trend: "+0.3", trendUp: true, label: "Consistent academic growth" },
     { title: personalStats[1]?.label || "Projects", value: personalStats[1]?.value || totalProjects, icon: Briefcase, color: "text-cyan-400", bg: "bg-cyan-500/10", trend: "Major", trendUp: true, label: "Portfolio Projects Count" },
     { title: personalStats[2]?.label || "Certifications", value: personalStats[2]?.value || totalCerts, icon: Award, color: "text-amber-400", bg: "bg-amber-500/10", trend: "Total", trendUp: true, label: "All Certifications" },
-    { title: personalStats[0]?.label || "DSA Solved", value: personalStats[0]?.value || realtimeStats.totalSolved || studentData.stats.dsaSolved, icon: Code2, color: "text-emerald-400", bg: "bg-emerald-500/10", trend: "200+", trendUp: true, label: "Strong problem-solving foundation" },
+    { title: personalStats[0]?.label || "DSA Solved", value: personalStats[0]?.value || realtimeStats.totalSolved || studentData.stats.dsaSolved, icon: Code2, color: "text-emerald-400", bg: "bg-emerald-500/10", trend: "300+", trendUp: true, label: "Strong problem-solving foundation" },
   ];
 
   const markSaved = (section: string, message: string) => {

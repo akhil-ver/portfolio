@@ -16,9 +16,9 @@ export const studentData = {
   },
   stats: {
     cgpa: 8.20,
-    totalProjects: 6,
-    certifications: 37,
-    dsaSolved: 200,
+    totalProjects: 18,
+    certifications: 38,
+    dsaSolved: 300,
     achievements: 3,
   },
   academics: {
@@ -840,7 +840,7 @@ export const studentData = {
     }
   ],
   dsa: {
-    total: 200,
+    total: 300,
     breakdown: { easy: 100, medium: 80, hard: 20 },
     streak: 12,
     longestStreak: 45,
@@ -864,7 +864,7 @@ export const studentData = {
       { name: "Recursion", solved: 15, total: 25 }
     ],
     platforms: {
-      leetcode: { solved: 150, rating: 1650, rank: "Top 15%", link: "https://leetcode.com/akhilverma" },
+      leetcode: { solved: 300, rating: 1650, rank: "Top 15%", link: "https://leetcode.com/akhilverma" },
       codeforces: { rating: 1200, rank: "Pupil", link: "https://codeforces.com/profile/akhilverma" },
       geeksforgeeks: { solved: 50, points: 1200, link: "https://geeksforgeeks.org/user/akhilverma" }
     },

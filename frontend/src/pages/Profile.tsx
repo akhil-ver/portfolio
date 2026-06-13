@@ -98,9 +98,9 @@ export default function Profile() {
   const [profile, setProfile] = React.useState(studentData.profile);
   const [internships, setInternships] = React.useState(studentData.internships);
   const [personalStats, setPersonalStats] = React.useState([
-    { label: "DSA Solved", value: "200+", color: "text-primary" },
-    { label: "Projects", value: "6+", color: "text-secondary" },
-    { label: "Certifications", value: "4+", color: "text-cyan-400" },
+    { label: "DSA Solved", value: "300+", color: "text-primary" },
+    { label: "Projects", value: "18+", color: "text-secondary" },
+    { label: "Certifications", value: "38+", color: "text-cyan-400" },
     { label: "Platforms", value: "3", color: "text-emerald-400" },
   ]);
   const [personalityInsights, setPersonalityInsights] = React.useState([
