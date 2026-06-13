@@ -827,14 +827,14 @@ export const studentData = {
     {
       company: "Unstop Tech Fair",
       role: "Software Development Intern",
-      duration: "Jan 2025 - Present",
+      duration: "Dec 2025 - Jan 2026",
       description: "Working on building scalable web components and optimizing frontend performance for high-traffic events.",
       skills: ["React", "TypeScript", "Tailwind CSS"]
     },
     {
       company: "Geo Spatial Club",
       role: "Senior Core Member",
-      duration: "2023 - Present",
+      duration: "July 2025 - May 2026",
       description: "Conducted workshops and mentored juniors in technical projects involving GIS data visualization and mapping.",
       skills: ["Leadership", "Mentoring", "GIS Data"]
     }

@@ -277,9 +277,9 @@ export default function Projects() {
     "Ready for real-world scalable system development.",
   ]);
   const [projectTimeline, setProjectTimeline] = React.useState([
-    { year: "2024", title: "AI/ML Systems", desc: "Advanced NLP models, Transformers, and scalable AI pipelines.", icon: "BrainCircuit", color: "text-primary" },
-    { year: "2023", title: "Full Stack + Cloud", desc: "Complex web apps with AWS integration and real-time databases.", icon: "Cloud", color: "text-secondary" },
-    { year: "2022", title: "Basic Web Apps", desc: "Foundational projects using HTML, CSS, and basic JavaScript.", icon: "Layout", color: "text-cyan-400" },
+    { year: "2025-26", title: "AI/ML Systems", desc: "Advanced NLP models, Transformers, and scalable AI pipelines.", icon: "BrainCircuit", color: "text-primary" },
+    { year: "2024", title: "Full Stack + Cloud", desc: "Complex web apps with AWS integration and real-time databases.", icon: "Cloud", color: "text-secondary" },
+    { year: "2023", title: "Basic Web Apps", desc: "Foundational projects using HTML, CSS, and basic JavaScript.", icon: "Layout", color: "text-cyan-400" },
   ]);
   const [saveMessage, setSaveMessage] = React.useState("");
 
