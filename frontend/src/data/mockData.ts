@@ -821,6 +821,36 @@ export const studentData = {
       skills: ["AWS", "Cloud Practitioner", "Practice Questions", "CLF-C02"],
       image: "/certificates/thumbnails/official-practice-question-set-aws-certified-cloud-practitioner-clf-c02.png",
       verified: true
+    },
+    {
+      id: 40,
+      name: "Ethical Hacking Bootcamp",
+      platform: "Physics Wallah",
+      date: "8th July 2026",
+      link: "/certificates/ethical-hacking-bootcamp.pdf",
+      skills: ["Ethical Hacking", "Cybersecurity"],
+      image: "/certificates/thumbnails/ethical-hacking-bootcamp.png",
+      verified: true
+    },
+    {
+      id: 41,
+      name: "AI/ML Launchpad Bootcamp",
+      platform: "Physics Wallah",
+      date: "8th July 2026",
+      link: "/certificates/aiml-launchpad-bootcamp.pdf",
+      skills: ["AI", "Machine Learning"],
+      image: "/certificates/thumbnails/aiml-launchpad-bootcamp.png",
+      verified: true
+    },
+    {
+      id: 42,
+      name: "Oracle AI Database SQL Certified Associate",
+      platform: "Oracle",
+      date: "July 15, 2026",
+      link: "/certificates/oracle-ai-database-sql.pdf",
+      skills: ["Oracle", "SQL", "AI Database"],
+      image: "/certificates/thumbnails/oracle-ai-database-sql.png",
+      verified: true
     }
   ],
   internships: [
